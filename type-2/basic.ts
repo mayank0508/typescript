@@ -1,4 +1,6 @@
 function add(n1: number, n2: number) {
+  console.log(typeof number1);
+  console.log(typeof number2);
   return n1 + n2;
 }
 
