@@ -16,6 +16,11 @@ let favoriteActivity: string[];
 // favoriteActivity = ['sports', 6]; // this will show error as the array is only of the string !!
 
 let favoriteActivity2: any[];
-favoriteActivity2 = ['sports', 6]; // this will not error !
+favoriteActivity2 = ['sports', 6]; // this will not error ! but it has its own downside on the backend side of things
 
 console.log(person.age);
+
+
+for (const hobby of person.hobbies) {
+console.log(hobby)
+}
