@@ -22,5 +22,5 @@ console.log(person.age);
 
 
 for (const hobby of person.hobbies) {
-console.log(hobby)
+console.log(hobby.toUpperCase())
 }
