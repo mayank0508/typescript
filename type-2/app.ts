@@ -1,15 +1,12 @@
-function add(n1: number, n2: number) {
-  return n1 + n2;
-}
+let userInput: unknown; // this is the unknow type !, here we can store any value with out any error ! 
+let userName: string; 
 
-function printResult(num: number) {
-  console.log('Result: ' + num);
-}
 
-printResult(add(1, 2));
+userInput = 4;
+userInput = 'mayank';
+userName = 'haha';
+// userName = 4; error !
 
-let combineValues: (a: number, b: number) => number;
+userName = userInput; // here any would not show a issue !
 
-combineValues = add;
-
-console.log(combineValues(3,4));
+// any is the more flexible of it and unknown, both are kinda same but it all comes down to stricking of the language
