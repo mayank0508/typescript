@@ -21,10 +21,10 @@ function combine(
   return result;
 }
 
-const combinedStringAges = combine('30', '26', 'as-num');
+const combinedStringAges = combine('30', '26', 'as-text');
 console.log(combinedStringAges);
 
-const combinedAges = combine(30, 26, 'as-num');
+const combinedAges = combine('30', '26', 'as-text');
 console.log(combinedAges);
 
 const combinedNames = combine('max', 'me', 'as-text');
