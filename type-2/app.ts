@@ -1,7 +1,11 @@
+type Combineable = number | string;
+type astypes = 'as-num' | 'as-text';
+
 function combine(
-  n1: number | string,
-  n2: number | string,
-  resultConversion: 'as-num' | 'as-text' // these are called literal types
+  n1: Combineable,
+  n2: Combineable,
+  // resultConversion: 'as-num' | 'as-text', // these are called literal types
+  resultConversion: astypes
 ) {
   let result; // this is a important optimization for performance reasons
   if (
