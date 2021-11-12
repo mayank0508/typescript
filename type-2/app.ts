@@ -7,6 +7,6 @@ userInput = 'mayank';
 userName = 'haha';
 // userName = 4; error !
 
-userName = userInput; // here any would not show a issue !
+// userName = userInput; // here any would not show a issue !
 
 // any is the more flexible of it and unknown, both are kinda same but it all comes down to stricking of the language
