@@ -10,8 +10,9 @@ userName = 'haha';
 
 // any is the more flexible of it and unknown, both are kinda same but it all comes down to stricking of the language
 
-function errorthrow(message: string, number: number) {
+function errorthrow(message: string, number: number): never {
   throw { error: message, code: number };
 }
 
-errorthrow('Hi sexy', 432)
+const result = errorthrow('Hi sexy', 432)
+console.log(result)
