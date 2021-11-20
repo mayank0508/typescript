@@ -1,5 +1,5 @@
 const button = document.querySelector('button')!;
 
 button.addEventListener('click', () => {
-    console.log('YAYAYAYAYYAYAA')
+    console.log('YAYAYAYAYYAYAA mate got then 😂😂')
 })
