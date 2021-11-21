@@ -25,6 +25,10 @@ const add = (a: number, b: number) => {
 return a + b;
 }
 
+
+// const add = (a: number, b: number) =>  a + b; this is only in use if you have only one fucntion
+    
+
 console.log(add(3,5))
 
 
