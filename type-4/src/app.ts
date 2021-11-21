@@ -22,13 +22,25 @@ if (age > 0) {
 // arrow section
 
 const add = (a: number, b: number) => {
-return a + b;
-}
-
+  return a + b;
+};
 
 // const add = (a: number, b: number) =>  a + b; this is only in use if you have only one fucntion
-    
 
-console.log(add(3,5))
+const printOut = (output: number | string) => {
+  console.log(output);
+};
 
+console.log(add(3, 5));
+printOut(add(3, 5));
 
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// default function parameter
+
+const add1 = (a: number, b: number = 6) => {
+  return a + b;
+};
+
+// const add = (a: number, b: number) =>  a + b; this is only in use if you have only one fucntion
+
+console.log(add1(3));
