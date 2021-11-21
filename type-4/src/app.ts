@@ -13,10 +13,18 @@ if (age > 0) {
   console.log(isAge);
 }
 
-if (age > 0) {
-  var isAge = true;
-}
+// if (age > 0) {
+//   var isAge = true;
+// }
+// console.log(isAge);
 
-console.log(isAge);
 //////////////////////////////////////////////////////////////////////////////////////////////////
 // arrow section
+
+const add = (a: number, b: number) => {
+return a + b;
+}
+
+console.log(add(3,5))
+
+
