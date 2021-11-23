@@ -46,4 +46,19 @@ console.log(add1(3));
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 // spread opertator
 
+const hobbits = ['🤔', '🤷‍♂️'];
+const bamm = ['👾', '😍', '🐍'];
+const apple = ['❤', '👀', ...bamm];
 
+apple.push(...hobbits);
+
+console.log(apple);
+
+const person = {
+  name: 'John',
+  sex: 'male'
+};
+
+const person2 = {
+  ...person
+};
