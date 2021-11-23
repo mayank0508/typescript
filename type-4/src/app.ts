@@ -55,7 +55,7 @@ apple.push(...hobbits);
 console.log(apple);
 
 const person = {
-  name: 'John',
+  name1: 'John',
   sex: 'male'
 };
 
@@ -73,6 +73,7 @@ console.log(person);
 // };
 
 const add2 = (...number: number[]) => {
+  // this can help us in accepting an unlimited amount of parameters
   return number.reduce((curResult, curValue) => {
     return curResult + curValue;
   }, 0);
@@ -80,3 +81,12 @@ const add2 = (...number: number[]) => {
 
 const addNumber = add2(4, 4, 52, 1);
 console.log(addNumber);
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+// array and object destructuring
+
+const [hobbie1, hobbie2, ...otherhobbits] = apple; // array destructuring
+console.log(hobbits, otherhobbits, hobbie1);
+
+const { name1: firstname, sex } = person; // object destructuring
+console.log(firstname, sex);
