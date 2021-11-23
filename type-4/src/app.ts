@@ -68,9 +68,15 @@ console.log(person);
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 // rest parameter
 
-const add2 = (a: number, b: number, c: number, d: number) => {
-  return a + b + c + d;
+// const add2 = (a: number, b: number, c: number, d: number) => {
+//   return a + b + c + d;
+// };
+
+const add2 = (...number: number[]) => {
+  return number.reduce((curResult, curValue) => {
+    return curResult + curValue;
+  }, 0);
 };
 
-const addNumber = add2(3, 4, 52, 1);
+const addNumber = add2(4, 4, 52, 1);
 console.log(addNumber);
