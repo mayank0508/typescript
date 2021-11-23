@@ -62,3 +62,15 @@ const person = {
 const person2 = {
   ...person
 };
+
+console.log(person);
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+// rest parameter
+
+const add2 = (a: number, b: number, c: number, d: number) => {
+  return a + b + c + d;
+};
+
+const addNumber = add2(3, 4, 52, 1);
+console.log(addNumber);
