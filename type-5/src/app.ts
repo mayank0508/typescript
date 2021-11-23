@@ -1,7 +1,10 @@
-class Department { // this is class and its uses 
+////////////////////////////////////////////////////////////////////////////////////////////////
+// this is the easiest use of a simple class
+class Department {
+  // this is class and its uses
   name: string;
   code: string;
-  members: number
+  members: number;
 
   constructor(a: string, b: string, c: number) {
     this.name = a;
