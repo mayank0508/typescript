@@ -3,29 +3,29 @@
 class Department {
   // this is class and its uses
   name: string;
-  code: string;
-  members: number;
+  // code: string;
+  // members: number;
 
-  constructor(a: string, b: string, c: number) {
+  constructor(a: string) {
     this.name = a;
-    this.code = b;
-    this.members = c;
+    // this.code = b;
+    // this.members = c;
   }
 
-  destruct() {
+  destruct(this: Department) {
     console.log('Fuck of: ' + this.name);
   }
 }
 
-const trade = new Department('Racket', 'hdabf', 454);
+const trade = new Department('Racket');
 
 // console.log(trade);
 
 trade.destruct();
 
 const DepartmentCopy = {
-  destruct: trade.destruct,
-  name: 'mum'
+  name: 'mum',
+  destruct: trade.destruct
 };
 
 DepartmentCopy.destruct();
