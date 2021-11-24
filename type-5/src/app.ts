@@ -11,6 +11,11 @@ class Department {
     this.code = b;
     this.members = c;
   }
+
+
+  destruct() {
+    console.log("Fuck of: " + name);
+  }
 }
 
 const trade = new Department('Racket', 'hdabf', 454);
