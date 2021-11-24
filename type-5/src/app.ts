@@ -5,9 +5,11 @@ class Department {
   name: string;
   // code: string;
   // members: number;
+  private employee: string[] = []; //this is how we initialize a array of employees
 
   constructor(a: string) {
     this.name = a;
+    this.employee = [];
     // this.code = b;
     // this.members = c;
   }
@@ -15,17 +17,31 @@ class Department {
   destruct(this: Department) {
     console.log('Fuck of: ' + this.name);
   }
+
+  addEmployee(employee: string) {
+    this.employee.push(employee);
+  }
+
+  printEmployee() {
+    console.log(this.employee.length);
+    console.log(this.employee);
+  }
 }
 
 const trade = new Department('Racket');
+trade.addEmployee('Mayank');
+trade.addEmployee('Maya');
+// trade.employee[2] = 'paru'
+
+trade.printEmployee();
 
 // console.log(trade);
 
 trade.destruct();
 
-const DepartmentCopy = {
-  name: 'mum',
-  destruct: trade.destruct
-};
+// const DepartmentCopy = {
+//   name: 'mum',
+//   destruct: trade.destruct
+// };
 
-DepartmentCopy.destruct();
+// DepartmentCopy.destruct();
