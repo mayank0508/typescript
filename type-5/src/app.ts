@@ -12,12 +12,20 @@ class Department {
     this.members = c;
   }
 
-
   destruct() {
-    console.log("Fuck of: " + name);
+    console.log('Fuck of: ' + this.name);
   }
 }
 
 const trade = new Department('Racket', 'hdabf', 454);
 
-console.log(trade);
+// console.log(trade);
+
+trade.destruct();
+
+const DepartmentCopy = {
+  destruct: trade.destruct,
+  name: 'mum'
+};
+
+DepartmentCopy.destruct();
