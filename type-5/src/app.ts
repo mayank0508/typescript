@@ -15,7 +15,8 @@ class Department {
   }
 
   destruct(this: Department) {
-    console.log('Fuck of: ' + this.name);
+    // console.log('Fuck of: ' + this.name);
+  console.log(`Department: ${this.name}`)
   }
 
   addEmployee(employee: string) {
