@@ -7,7 +7,7 @@ class Department {
   // // members: number;
   private employee: string[] = []; //this is how we initialize a array of employees
 
-  constructor(public name: string) {
+  constructor(public name: string, private readonly id: number) {
     // this.name = a;
     // this.employee = [];
     // this.code = b;
@@ -16,7 +16,7 @@ class Department {
 
   destruct(this: Department) {
     // console.log('Fuck of: ' + this.name);
-  console.log(`Department: ${this.name}`)
+    console.log(`ID: ${this.id} --> Department: ${this.name}`);
   }
 
   addEmployee(employee: string) {
@@ -29,7 +29,7 @@ class Department {
   }
 }
 
-const trade = new Department('Racket');
+const trade = new Department('Racket', 76);
 trade.addEmployee('Mayank');
 trade.addEmployee('Maya');
 // trade.employee[2] = 'paru'
