@@ -2,14 +2,14 @@
 // this is the easiest use of a simple class
 class Department {
   // this is class and its uses
-  name: string;
-  // code: string;
-  // members: number;
+  // name: string;
+  // // code: string;
+  // // members: number;
   private employee: string[] = []; //this is how we initialize a array of employees
 
-  constructor(a: string) {
-    this.name = a;
-    this.employee = [];
+  constructor(public name: string) {
+    // this.name = a;
+    // this.employee = [];
     // this.code = b;
     // this.members = c;
   }
