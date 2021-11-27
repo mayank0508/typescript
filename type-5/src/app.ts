@@ -16,10 +16,11 @@ class Department {
 
   destruct(this: Department) {
     // console.log('Fuck of: ' + this.name);
-    console.log(`ID: ${this.id} --> Department: ${this.name}`);
+    console.log(`ID: ${this.id} --> Department: ${this.name}`)
   }
 
   addEmployee(employee: string) {
+
     this.employee.push(employee);
   }
 
