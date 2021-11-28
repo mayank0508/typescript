@@ -30,6 +30,11 @@ class Department {
   }
 }
 
+
+class ITDepo extends Department {
+
+}
+
 const trade = new Department('Racket', 76);
 trade.addEmployee('Mayank');
 trade.addEmployee('Maya');
